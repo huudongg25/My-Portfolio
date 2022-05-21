@@ -7,13 +7,13 @@
     }
 
     &_main {
-        margin:0 auto 1rem auto;
+        margin:0 auto 2rem auto;
         width: 80%;
         position: relative;
         display: flex;
         justify-content: center;
         & img {
-            border-radius: 15px;
+            border-radius: 8px;
             object-fit: cover;
             object-position: center;
         }
@@ -21,7 +21,6 @@
     }
     &_images {
         margin:0 auto;
-        width: 70%;
         height: 100px;
         display: flex;
         flex: 1;
@@ -29,7 +28,7 @@
         &-item {
             object-fit: cover;
             object-position: center;
-            padding: 5px;
+            padding: 6px;
             border-radius: 10px;
             cursor: pointer;
             transition: .4s;
@@ -54,7 +53,7 @@
     color: var(--first-color);
     position: absolute;
     top: 50%;
-    left: -10rem;
+    left: -3rem;
     transition: .4s;
     &:hover {
         transform: scale(1.2);
@@ -66,7 +65,7 @@
     color: var(--first-color);
     position: absolute;
     top: 50%;
-    right:-10rem;
+    right:-3rem;
     transition: .4s;
     &:hover {
         transform: scale(1.2);

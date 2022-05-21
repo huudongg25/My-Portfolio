@@ -6,15 +6,17 @@
         text-align: center;
     }
     &_name {
+        font-style: italic;
         color: var(--body-color);
         font-weight: 600;
         font-size: 3rem;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 
     &_list {
         & a {
          display: block;
+         margin: 0 2rem;
          transition: .4s;
          &:hover {
              opacity: 0.5;
@@ -54,7 +56,7 @@
     }
 
     &_copyright {
-        margin-top: 8rem;
+        margin: 8rem 0 5rem 0;
         & p {
             font-size: 1.4rem;
             color: var(--body-color);

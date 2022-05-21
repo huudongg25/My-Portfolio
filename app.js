@@ -69,5 +69,26 @@ setInterval(function(){
         currentIndex++
     }
     renderImg(currentIndex)
-},10000)
+},6000)
 renderImg(0)
+
+
+// ====== scroll nav bar=====
+const sections = $$('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(item=>{
+        const sectionHeight = item.offsetHeight
+        const sectionTop = item.offsetTop - 170
+        const sectionId = item.getAttribute('id')
+        if(scrollY > sectionTop && scrollY <=  sectionTop + sectionHeight) {
+            $('.nav_menu a[href*=' + sectionId +']').classList.add('active-link')
+        } else {
+            $('.nav_menu a[href*=' + sectionId +']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll',scrollActive)
+

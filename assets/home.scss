@@ -22,7 +22,7 @@
         display: block;
         font-size: 1.3rem;
         color: var(--title-color);
-        animation: up-and-down linear 1s alternate infinite;
+        animation: up-and-down linear 1s  alternate infinite;
     }
     &_education {
         color: var(--text-color);
@@ -32,8 +32,8 @@
     &_name {
         font-size: 3rem;
         font-weight: 600;
-        margin: 8px 0;
-        animation: up-and-down linear 1s alternate infinite;
+        margin: 8px 0 25px 0;
+        animation: up-and-down linear 1s  alternate infinite;
     }
 
     &_handle {
@@ -50,6 +50,10 @@
         justify-content: center;
         align-items: center;
         gap: 3rem;
+        & a {
+            padding: 1rem 0;
+            width: 12%;
+        }
     }
 
     &_social,

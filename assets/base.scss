@@ -86,10 +86,13 @@ img {
 
 @keyframes up-and-down {
   from {
-    transform: translateY(-4px);
+    opacity: 0.2;
+    transform:  translateY(-6px);
   }
   to {
-    transform: translateY((4px));
+    color: var(--first-color);
+    opacity: 1;
+    transform:  translateY((6px));
   }
 }
 
