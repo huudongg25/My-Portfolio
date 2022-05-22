@@ -676,7 +676,7 @@ img {
     width: 100%;
   }
   .fav_main div {
-    top: 120%;
+    top: 108%;
   }
   .fav_images {
     display: none;
@@ -688,12 +688,12 @@ img {
 
   .prev {
     top: 50%;
-    left: -10rem;
+    left: -14rem;
   }
 
   .next {
     top: 50%;
-    right: -10rem;
+    right: -14rem;
   }
 
   .contact {
@@ -757,7 +757,7 @@ img {
     width: 100%;
   }
   .fav_main div {
-    top: 120%;
+    top: 104%;
   }
   .fav_images {
     display: none;
@@ -768,11 +768,13 @@ img {
   }
 
   .prev {
-    left: -10rem;
+    font-size: 2.5rem;
+    left: -12rem;
   }
 
   .next {
-    right: -10rem;
+    font-size: 2.5rem;
+    right: -12rem;
   }
 
   .contact {

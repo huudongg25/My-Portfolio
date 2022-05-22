@@ -82,7 +82,7 @@
     &_main {
       width: 100%;
       & div {
-        top: 120%;
+        top: 108%;
       }
     }
     &_images {
@@ -94,11 +94,11 @@
   }
   .prev {
     top: 50%;
-    left: -10rem;
+    left: -14rem;
   }
   .next {
     top: 50%;
-    right: -10rem;
+    right: -14rem;
   }
 
   .contact {
@@ -171,7 +171,7 @@
     &_main {
       width: 100%;
       & div {
-        top: 120%;
+        top: 104%;
       }
     }
     &_images {
@@ -182,10 +182,12 @@
     height: 400px;
   }
   .prev {
-    left: -10rem;
+    font-size: 2.5rem;
+    left: -12rem;
   }
   .next {
-    right: -10rem;
+    font-size: 2.5rem;
+    right: -12rem;
   }
 
   .contact {
