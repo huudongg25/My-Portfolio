@@ -48,24 +48,30 @@
     background-color: var(--first-color);
 }
 .prev {
-    font-size: 5rem;
+    font-size: 3rem;
     cursor: pointer;
     color: var(--first-color);
     position: absolute;
     top: 50%;
-    left: -3rem;
+    left: -1rem;
     transition: .4s;
+    background-color: #ccc;
+    padding:1.5rem 2.2rem;
+    border-radius: 4rem;
     &:hover {
         transform: scale(1.2);
     }
 }
 .next {
-    font-size: 5rem;
+    font-size: 3rem;
     cursor: pointer;
     color: var(--first-color);
     position: absolute;
     top: 50%;
-    right:-3rem;
+    right:-1rem;
+    background-color: #ccc;
+    padding:1.5rem 2.2rem;
+    border-radius: 4rem;
     transition: .4s;
     &:hover {
         transform: scale(1.2);

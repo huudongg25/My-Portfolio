@@ -1,18 +1,177 @@
 /* =====PC====== */
 
-@media (min-width:64em) {
-   
+@media (min-width: 64em) {
 }
 
 /* =====Tablet========== */
 
-@media (min-width:46.25em) and (max-width:64em) {
+@media (min-width: 46.25em) and (max-width: 64em) {
+    .nav_menu {
+        width: 70%;
+        right: 15%;
+    }
+    .home {
+    &_buttons {
+      & a {
+        width: 22%;
+      }
+    }
+    &_img {
+      width: 30%;
+    }
 
+    &_social {
+      left: 0;
+    }
+    &_scroll {
+      right: -3rem;
+    }
+  }
+
+  .about {
+    &_box {
+      margin-top: 5rem;
+      &-item {
+          padding: 3rem 0;
+      }
+    }
+    &_content {
+      &.col {
+        align-items: center;
+      }
+    }
+    &_btn {
+      width: 25%;
+      text-align: center;
+      padding: 1.5rem;
+    }
+  }
+
+  .skills {
+    &_box {
+      margin: 0 auto 5rem auto;
+    }
+    &_group {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  .fav {
+    &_main {
+      width: 80%;
+    }
+    &_images {
+      display: none;
+    }
+  }
+  .feature_img {
+    height: 400px;
+  }
+  .prev {
+    top: 105%;
+    left: -3rem;
+  }
+  .next {
+    top: 105%;
+    right: -3rem;
+  }
+
+  .contact {
+    margin: 10rem 0 20rem 0;
 }
-
+  .contact_img {
+      margin-bottom: 5rem;
+  }
+}
 
 /* ======Mobile====== */
 
-@media (max-width:46.1875em) {
+@media (max-width: 46.1875em) {
+    .nav{
+        margin: 1rem 2rem;
+    }
+    .nav_menu {
+        width: 90%;
+        right: 5%;
+    }
+    .home {
+        &_buttons {
+          & a {
+              margin-top: 1rem;
+            width: 30%;
+            padding: 1.4rem 0;
+          }
+        }
+        &_img {
+          width: 40%;
+        }
     
+        &_social {
+          left: 1rem;
+          bottom: 7rem;
+        }
+        &_scroll {
+          bottom: 13rem;
+          right: -1rem;
+        }
+      }
+
+      .about {
+        &_box {
+            margin-top: 5rem;
+            justify-content: center;
+          &-item {
+            padding: 2rem 0;
+            margin-bottom: 1.5rem;
+        }
+        }
+        &_content {
+          &.col {
+            align-items: center;
+          }
+        }
+        &_btn {
+          width: 45%;
+          text-align: center;
+          padding: 2rem;
+        }
+      }
+
+      .skills {
+        &_box {
+          margin: 0 auto 5rem auto;
+        }
+    }
+    .fav {
+        &_main {
+          width: 80%;
+        }
+        &_images {
+     
+          display: none;
+        }
+      }
+      .feature_img {
+        height: 400px;
+      }
+      .prev {
+        top: 105%;
+        left: -3rem;
+      }
+      .next {
+        top: 105%;
+        right: -3rem;
+      }
+
+      .contact {
+          margin: 10rem 0 20rem 0;
+      }
+      .contact_img {
+        margin-bottom: 5rem;
+    }
+
+    .contact_card {
+        width: 80%;
+    }
 }
