@@ -429,6 +429,10 @@ img {
   display: flex;
   flex: 1;
   justify-content: space-around;
+  padding: 0.2rem;
+  background-color: hsla(var(--second-tone), 32%, 16%, 0.8);
+  backdrop-filter: blur(1rem);
+  border-radius: 10px;
 }
 .fav_images-item {
   object-fit: cover;
