@@ -14,7 +14,6 @@
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
-
     &_logo {
         color: var(--first-color);
         font-weight: 500;
@@ -35,13 +34,16 @@
         padding: 20px 40px;
         backdrop-filter: blur(1rem);
     }
+  
     &_list {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
         & li {
-            transition: .4s;
+            & a {
+                border-radius: 50%;
+            }
             &:hover {
                 transform: scale(1.2);
             }
@@ -67,7 +69,6 @@
 }
 
 .active-link {
-    border-radius: 50%;
     background: linear-gradient(180deg,
                 hsla(var(--first-tone),var(--sat),var(--lig),1),
                 hsla(var(--first-tone),var(--sat),var(--lig), .2));

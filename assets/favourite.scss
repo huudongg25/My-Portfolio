@@ -1,79 +1,79 @@
 .fav {
-    &_container {
-        margin-top: 5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  &_container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    &_main {
-        margin:0 auto 2rem auto;
-        width: 80%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        & img {
-            border-radius: 8px;
-            object-fit: cover;
-            object-position: center;
-        }
-     
+  &_main {
+    text-align: center;
+    margin: 0 auto 2rem auto;
+    position: relative;
+    & div {
+      position: absolute;
+      top: 50%;
+      font-size: 3rem;
+      cursor: pointer;
+      color: var(--first-color);
     }
-    &_images {
-        margin:0 auto;
-        height: 100px;
-        display: flex;
-        flex: 1;
-        justify-content: space-around;
-        &-item {
-            object-fit: cover;
-            object-position: center;
-            padding: 6px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: .4s;
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
+    &.col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    
+    & img {
+      border-radius: 8px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &_images {
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    &-item {
+      object-fit: cover;
+      object-position: center;
+      padding: 6px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.4s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
 }
 
 .feature_img {
-    height: 450px;
+  height: 450px;
 }
 
 .active {
-    background-color: var(--first-color);
+  background-color: var(--first-color);
 }
 .prev {
-    font-size: 3rem;
-    cursor: pointer;
-    color: var(--first-color);
-    position: absolute;
-    top: 50%;
-    left: -1rem;
-    transition: .4s;
-    background-color: #ccc;
-    padding:1.5rem 2.2rem;
-    border-radius: 4rem;
-    &:hover {
-        transform: scale(1.2);
-    }
+  position: absolute;
+  left: -45rem;
+  transition: 0.4s;
+  background-color: rgba($color: #ccc, $alpha: .9);
+  padding: 1.5rem 2.2rem;
+  border-radius: 4rem;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 .next {
-    font-size: 3rem;
-    cursor: pointer;
-    color: var(--first-color);
-    position: absolute;
-    top: 50%;
-    right:-1rem;
-    background-color: #ccc;
-    padding:1.5rem 2.2rem;
-    border-radius: 4rem;
-    transition: .4s;
-    &:hover {
-        transform: scale(1.2);
-    }
+  position: absolute;
+  right: -45rem;
+  background-color: rgba($color: #ccc, $alpha: .9);
+  padding: 1.5rem 2.2rem;
+  border-radius: 4rem;
+  transition: 0.4s;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
