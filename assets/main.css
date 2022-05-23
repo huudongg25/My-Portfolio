@@ -496,7 +496,7 @@ i.light-theme:hover {
 }
 
 .active {
-  background-color: var(--first-color);
+  background-color: var(--text-color);
 }
 
 .prev {
