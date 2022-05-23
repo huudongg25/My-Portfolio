@@ -61,7 +61,7 @@
 
 i.change-theme {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color:var(--first-color);
     transition: .4s;
     &:hover {
@@ -69,9 +69,15 @@ i.change-theme {
     }
 }
 
-
-
-
+i.light-theme {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color:var(--first-color);
+    transition: .4s;
+    &:hover {
+        color: var(--first-color-alt);
+    }
+}
 
 
 .active-link {

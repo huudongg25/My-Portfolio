@@ -140,3 +140,11 @@ img {
     transform: scale(1);
   }
 }
+
+.hide.btn-theme {
+  display: none;
+}
+
+.show.btn-theme {
+  display: block;
+}

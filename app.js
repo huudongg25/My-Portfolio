@@ -93,10 +93,32 @@ function scrollActive(){
 window.addEventListener('scroll',scrollActive)
 
 // ========= change theme ==========
-
+const btnsTheme = $$('.btn-theme')
 const darkIcon = $('i.change-theme')
+const lightIcon = $('i.light-theme')
 
-darkIcon.onclick = function() {
-    document.body.classList.toggle('light-theme')
+btnsTheme.forEach(item=>{
+    item.onclick = function() {
+        document.body.classList.toggle('light-theme')
+    }
+})
+
+lightIcon.onclick = function() {
+    lightIcon.parentNode.classList.add('hide')
+    lightIcon.parentNode.classList.remove('show')
+    darkIcon.parentNode.classList.remove('hide')
+    darkIcon.parentNode.classList.add('show')
 }
+darkIcon.onclick = function() {
+    darkIcon.parentNode.classList.add('hide')
+    darkIcon.parentNode.classList.remove('show')
+    lightIcon.parentNode.classList.remove('hide')
+    lightIcon.parentNode.classList.add('show')
+}
+
+
+
+
+
+
 

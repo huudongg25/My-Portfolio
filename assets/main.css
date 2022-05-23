@@ -134,6 +134,14 @@ img {
     transform: scale(1);
   }
 }
+.hide.btn-theme {
+  display: none;
+}
+
+.show.btn-theme {
+  display: block;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -192,11 +200,21 @@ img {
 
 i.change-theme {
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--first-color);
   transition: 0.4s;
 }
 i.change-theme:hover {
+  color: var(--first-color-alt);
+}
+
+i.light-theme {
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: var(--first-color);
+  transition: 0.4s;
+}
+i.light-theme:hover {
   color: var(--first-color-alt);
 }
 
