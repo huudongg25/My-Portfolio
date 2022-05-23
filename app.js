@@ -93,3 +93,10 @@ function scrollActive(){
 window.addEventListener('scroll',scrollActive)
 
 // ========= change theme ==========
+
+const darkIcon = $('i.change-theme')
+
+darkIcon.onclick = function() {
+    document.body.classList.toggle('light-theme')
+}
+

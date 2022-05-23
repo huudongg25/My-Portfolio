@@ -29,6 +29,36 @@ html {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: .5s;
+}
+
+body.light-theme {
+  --title-color: hsl(var(--second-tone), 15%, 15%);
+  --text-color: hsl(var(--second-tone), 8%, 35%);
+  --body-color: hsl(var(--second-tone), 100%, 99%);
+  --container-color: rgb(240, 240, 240);
+}
+
+.light-theme .header {
+  box-shadow: 4px 0 10px hsla(var(--first-tone), var(--lig), var(--sat), 0.2);
+}
+
+.light-theme .fav_images {
+  background-color: #ccc;
+}
+
+.light-theme .nav_menu {
+  background-color: #ccc;
+  opacity: 0.8;
+}
+
+.light-theme .active-link {
+  background: linear-gradient(
+    180deg,
+    hsla(var(--first-tone), var(--lig), var(--sat), 1),
+    hsla(var(--first-tone), var(--lig), var(--sat), 0.2)
+  );
+  box-shadow: 0 0 16px hsla(var(--first-tone), var(--lig), var(--sat), 0.4);
 }
 
 h1,
@@ -79,16 +109,15 @@ img {
   color: var(--first-color);
 }
 
-
 @keyframes up-and-down {
   from {
     opacity: 0.2;
-    transform:  translateY(-6px);
+    transform: translateY(-6px);
   }
   to {
     color: var(--first-color);
     opacity: 1;
-    transform:  translateY((6px));
+    transform: translateY((6px));
   }
 }
 
