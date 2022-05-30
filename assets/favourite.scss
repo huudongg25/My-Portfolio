@@ -35,7 +35,7 @@
     flex: 1;
     justify-content: space-around;
     padding: 0.2rem;
-    background-color: hsla(var(--second-tone),32%,16%,.8);
+    background-color: hsla(var(--second-tone), 32%, 16%, 0.8);
     backdrop-filter: blur(1rem);
     border-radius: 10px;
     &-item {
@@ -63,7 +63,7 @@
   position: absolute;
   left: -45rem;
   transition: 0.4s;
-  background-color: rgba($color: #ccc, $alpha: .9);
+  background-color: hsla(var(--first-tone), 32%, 16%, 0.8);
   padding: 1.5rem 2.2rem;
   border-radius: 4rem;
   &:hover {
@@ -73,7 +73,7 @@
 .next {
   position: absolute;
   right: -45rem;
-  background-color: rgba($color: #ccc, $alpha: .9);
+  background-color: hsla(var(--first-tone), 32%, 16%, 0.8);
   padding: 1.5rem 2.2rem;
   border-radius: 4rem;
   transition: 0.4s;
