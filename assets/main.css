@@ -579,9 +579,12 @@ i.light-theme:hover {
   margin-right: 2rem;
 }
 .contact_title {
+  text-align: justify;
+  margin: 1rem 0 4rem 0;
+  width: 85%;
   font-size: 1.4rem;
   font-style: italic;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .contact_img {
   padding: 0;
