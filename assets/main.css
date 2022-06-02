@@ -56,6 +56,10 @@ body.light-theme {
   box-shadow: 0 0 16px hsla(var(--first-tone), var(--lig), var(--sat), 0.4);
 }
 
+.light-theme .fav_main i {
+  background-color: rgb(224, 224, 224);
+}
+
 h1,
 h2,
 h3,
