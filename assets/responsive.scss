@@ -273,7 +273,18 @@
 
   .skills {
     &_box {
+      max-width: 90%;
       margin: 0 auto 5rem auto;
+    }
+    &_group {
+      display: flex;
+      justify-content: space-between;
+      min-width: 100%;
+    }
+    &_data {
+      & i {
+        margin-left: 0;
+      }
     }
   }
   .fav {
@@ -309,10 +320,14 @@
     margin: 10rem 0 20rem 0;
   }
   .contact_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 5rem;
+    max-width: 90%;
   }
 
   .contact_card {
-    width: 80%;
+    max-width: 90%;
   }
 }

@@ -407,7 +407,7 @@ i.light-theme:hover {
 }
 .skills_group {
   margin-top: 4rem;
-  width: 80%;
+  width: 100%;
   align-items: center;
 }
 .skills_data {
@@ -908,7 +908,16 @@ i.light-theme:hover {
   }
 
   .skills_box {
+    max-width: 90%;
     margin: 0 auto 5rem auto;
+  }
+  .skills_group {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+  }
+  .skills_data i {
+    margin-left: 0;
   }
 
   .fav_main {
@@ -946,11 +955,15 @@ i.light-theme:hover {
   }
 
   .contact_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 5rem;
+    max-width: 90%;
   }
 
   .contact_card {
-    width: 80%;
+    max-width: 90%;
   }
 }
 
