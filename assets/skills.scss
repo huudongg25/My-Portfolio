@@ -23,8 +23,8 @@
 
   &_group {
     margin-top: 4rem;
-    width: 100%;
-    align-items: center;
+    width: 120%;
+    align-items: center !important;
   }
 
   &_data {
@@ -33,13 +33,14 @@
     margin-bottom: 1.5rem;
     & div {
       display: flex;
+      justify-content: flex-start;
     }
 
     & i {
       color: var(--first-color);
       font-size: 1.1rem;
       line-height: 1.5;
-      margin: 0 2rem 0 3rem;
+      margin: 0 1rem 0 2rem;
     }
   }
 
@@ -59,6 +60,7 @@
   }
 
   &_name {
+    margin: 0;
     font-size: 1.4rem;
     font-weight: 600;
   }
