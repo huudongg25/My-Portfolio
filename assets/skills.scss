@@ -30,8 +30,9 @@
   &_data {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.4rem;
     & div {
+      margin-bottom: 1rem;
       display: flex;
       justify-content: flex-start;
     }

@@ -417,9 +417,10 @@ i.light-theme:hover {
 .skills_data {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.4rem;
 }
 .skills_data div {
+  margin-bottom: 1rem;
   display: flex;
   justify-content: flex-start;
 }
