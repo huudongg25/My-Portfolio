@@ -1,0 +1,120 @@
+.main {
+    overflow: hidden;
+}
+
+
+.home {
+    &_container {
+        position: relative;
+        padding-top: 2rem;
+    }
+    &_data {
+        text-align: center;
+    }
+
+    &_greeting,
+    &_education {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    &_greeting {
+        display: block;
+        font-size: 1.3rem;
+        color: var(--title-color);
+        animation: up-and-down linear 1s  alternate infinite;
+    }
+    &_education {
+        color: var(--text-color);
+        margin-bottom: 3rem;
+    }
+
+    &_name {
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 8px 0 25px 0;
+        animation: up-and-down linear 1s  alternate infinite;
+    }
+
+    &_handle {
+    }
+    &_img {
+        padding: 1px;
+        box-shadow: 0 0 12px rgba(44, 20, 20, 0.5);
+        margin-top: 50px;
+        width: 20%;
+        border-radius:50px 50px 0 0;
+    }
+
+    &_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        & a {
+            padding: 1rem 0;
+            width: 12%;
+        }
+    }
+
+    &_social,
+    &_scroll {
+        position: absolute;
+    }
+    &_social {
+        display: flex;
+        flex-direction: column;
+        left: 5rem;
+        bottom: 20rem; 
+        &-link {
+            margin-top: 2rem;
+            font-size: 2rem;
+            color: var(--first-color);
+            padding: 7px;
+            border-radius: 10px;
+            background-color: var(--container-color) ;
+            transition: .4s;
+            &:hover {
+                background-color: var(--first-color);
+                color: #fff;
+                transform: scale(1.2);
+            }
+        }
+    }
+    &_scroll {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+        gap: 2rem;
+        color: var(--first-color);
+        bottom: 25rem;
+        right: 5rem;
+        &-desc {
+            margin-top: 20px;
+            font-size: 1.4rem;
+            transform: rotate(-90deg);
+        }
+    }
+
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--body-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: .4s;
+    &:hover {
+        background-color: var(--first-color-alt);
+        color: var(--body-color);
+    }
+}
+
+.button_cv {
+    background-color: transparent;
+    border: 2px solid var(--first-color);
+    color: var(--first-color);
+}

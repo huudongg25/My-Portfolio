@@ -1,0 +1,83 @@
+.fav {
+  &_container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_main {
+    text-align: center;
+    margin: 0 auto 2rem auto;
+    position: relative;
+    & div {
+      position: absolute;
+      top: 50%;
+      font-size: 3rem;
+      cursor: pointer;
+      color: var(--first-color);
+    }
+    &.col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    & img {
+      border-radius: 8px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &_images {
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    padding: 0.2rem;
+    background-color: hsla(var(--second-tone), 32%, 16%, 0.8);
+    backdrop-filter: blur(1rem);
+    border-radius: 10px;
+    &-item {
+      object-fit: cover;
+      object-position: center;
+      padding: 6px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.4s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.feature_img {
+  height: 450px;
+}
+
+.active {
+  background-color: var(--text-color);
+}
+.prev {
+  position: absolute;
+  left: -45rem;
+  transition: 0.4s;
+  background-color: hsla(var(--first-tone), 32%, 16%, 0.8);
+  padding: 1.5rem 2.2rem;
+  border-radius: 4rem;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.next {
+  position: absolute;
+  right: -45rem;
+  background-color: hsla(var(--first-tone), 32%, 16%, 0.8);
+  padding: 1.5rem 2.2rem;
+  border-radius: 4rem;
+  transition: 0.4s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
